@@ -1,0 +1,211 @@
+.reserve-card-container {
+  position: sticky;
+  top: 100px;
+  width: 100%;
+}
+
+.offer-banner-card {
+  background-color: #f7f7f7;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.offer-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.offer-badge {
+  background-color: #10805b;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.claim-btn {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.claim-btn:hover {
+  background-color: #000000;
+}
+
+.claim-btn.claimed {
+  background-color: #10805b;
+}
+
+/* Main Reserve Box */
+.reserve-box {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.reserve-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.reserve-price .price-num {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.reserve-price .price-unit {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.reserve-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reserve-rating .dot {
+  margin: 0 2px;
+}
+
+.reserve-rating .reviews-link {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Picker Grid */
+.picker-container {
+  border: 1px solid #b0b0b0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.dates-row {
+  display: flex;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.date-input-box {
+  flex: 1;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.date-input-box.checkin {
+  border-right: 1px solid #b0b0b0;
+}
+
+.date-input-box label {
+  display: block;
+  font-size: 9px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 2px;
+}
+
+.date-val {
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.guests-select-box {
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.guests-info label {
+  display: block;
+  font-size: 9px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 2px;
+}
+
+.guests-val {
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.reserve-action-btn {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.no-charge-text {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.price-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: var(--text-main);
+}
+
+.underline-item {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.discount-row {
+  color: #10805b;
+}
+
+.discount-val {
+  font-weight: 600;
+}
+
+.total-divider {
+  height: 1px;
+  background-color: var(--border-light);
+  margin-bottom: 24px;
+}
+
+.total-price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-main);
+}

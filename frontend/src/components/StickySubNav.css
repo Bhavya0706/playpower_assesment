@@ -1,0 +1,126 @@
+.secondary-sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.sticky-nav-container {
+  width: min(var(--max-width), calc(100% - 48px));
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left Section: Smooth Scroll Section Links */
+.sticky-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: 80px;
+}
+
+.sticky-nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, font-weight 0.15s ease, color 0.15s ease;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.sticky-nav-link:hover {
+  color: #000000;
+}
+
+.sticky-nav-link.active {
+  border-bottom: 2px solid #222222;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Right Section: Pricing Summary & Quick-Action Reserve Button */
+.sticky-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.sticky-pricing-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.pricing-line {
+  font-size: 16px;
+  color: #222222;
+}
+
+.bold-price {
+  font-weight: 700;
+  font-size: 16px;
+  color: #222222;
+}
+
+.price-subtext {
+  font-weight: 400;
+  font-size: 14px;
+  color: #222222;
+}
+
+.rating-line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.rating-line .dot {
+  margin: 0 2px;
+}
+
+.reviews-subtext {
+  color: #717171;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Brand Accent Reserve Button */
+.brand-reserve-btn {
+  background-color: #ff385c;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+
+.brand-reserve-btn:hover {
+  background-color: #e00b41;
+}
+
+.brand-reserve-btn:active {
+  transform: scale(0.98);
+}

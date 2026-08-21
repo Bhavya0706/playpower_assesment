@@ -1,0 +1,51 @@
+.hero-header {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.hero-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 30px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: underline;
+  background: transparent;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: var(--bg-hover);
+}
+
+.heart-icon {
+  transition: transform 0.2s ease, fill 0.2s ease, color 0.2s ease;
+}
+
+.save-btn.saved .heart-icon {
+  transform: scale(1.15);
+}
+
+.save-btn.saved .action-label {
+  color: var(--text-main);
+}
