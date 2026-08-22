@@ -136,11 +136,7 @@ export default function ListingDetails({ listingData, onOpenAmenities }) {
                 <h4>Bedroom</h4>
                 <p>1 double bed</p>
               </article>
-              <article className="sleeping-card">
-                <img src={listingData.photos?.[0]?.url || listingData.photos?.[1]?.url} alt="Living room" />
-                <h4>Living room</h4>
-                <p>1 sofa</p>
-              </article>
+           
             </div>
           </section>
 
@@ -172,7 +168,7 @@ export default function ListingDetails({ listingData, onOpenAmenities }) {
               className="btn-outline-lg show-amenities-btn"
               onClick={onOpenAmenities}
             >
-              Show all 50 amenities
+              Show all 20 amenities
             </button>
           </div>
 

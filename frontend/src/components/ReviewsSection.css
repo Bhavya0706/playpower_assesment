@@ -228,3 +228,23 @@
 .show-all-reviews-btn:hover {
   background-color: #f7f7f7;
 }
+
+.rating-laurel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.laurel-leaf {
+  width: 65px;
+  height: 95px;
+  object-fit: contain;
+}
+
+.laurel-leaf.left {
+  margin-right: 8px;
+}
+
+.laurel-leaf.right {
+  margin-left: 8px;
+}

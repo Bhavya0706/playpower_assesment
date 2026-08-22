@@ -1,6 +1,8 @@
 import React from 'react';
 import { Star, ShieldCheck, CheckCircle2, Key, MessageSquare, MapPin, Tag } from 'lucide-react';
 import './ReviewsSection.css';
+import leftwing from '../assets/left_wing.avif';
+import rightwing from '../assets/right_wing.avif';
 
 export default function ReviewsSection({ ratingBreakdown, reviewTags, reviews }) {
   return (
@@ -9,11 +11,13 @@ export default function ReviewsSection({ ratingBreakdown, reviewTags, reviews })
 
       {/* Guest Favourite Big Rating Header */}
       <div className="guest-favorite-header" id="reviews-section">
-        <div className="rating-laurel-wrapper">
-          <span className="laurel-leaf left">🌿</span>
-          <span className="big-rating-score">4.95</span>
-          <span className="laurel-leaf right">🌿</span>
-        </div>
+      <div className="rating-laurel-wrapper">
+    <img src={leftwing} alt="" className="laurel-leaf left" />
+
+    <span className="big-rating-score">4.95</span>
+
+    <img src={rightwing} alt="" className="laurel-leaf right" />
+</div>
         <h2 className="guest-favorite-title">Guest favourite</h2>
         <p className="guest-favorite-subtext">
           This home is a guest favourite based on ratings, reviews and reliability
