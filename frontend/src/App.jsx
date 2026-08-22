@@ -185,7 +185,7 @@ export default function App() {
 
   // Fetch API data from Express backend if running
   useEffect(() => {
-    fetch('http://localhost:5000/api/listing')
+    fetch(`${import.meta.env.VITE_API_URL}/api/listing`)
       .then(res => {
         if (!res.ok) throw new Error('API network response error');
         return res.json();
